@@ -1,0 +1,10 @@
+//footer
+footer {
+    @extend header;
+}
+.footer__content {
+    @extend .header__content;
+}
+.footer__navigation_list {
+    @extend .header__navigation_list;
+}

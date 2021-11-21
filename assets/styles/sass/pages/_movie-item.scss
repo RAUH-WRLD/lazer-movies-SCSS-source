@@ -1,0 +1,184 @@
+//header active page
+.movie__header,
+.movie__footer {
+    .header__navigation_list {
+        li:nth-child(4) {
+            a {
+                pointer-events: none;
+                color: $color_relentlessly-red;
+                cursor: default;
+            }
+        }
+    }
+}
+//main
+.movie__main {
+    font-family: "Roboto Condensed", sans-serif;
+    &:before {
+        content: "Загрузка Kinopoisk";
+        display: inline-block;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color_relentlessly-red;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $color_dark-grey;
+        letter-spacing: 2px;
+        z-index: 10001;
+        animation: 0.75s ease 0s infinite loadingKinopoisk;
+    }
+    //start section
+    .main__content_start {
+        .movie__info {
+            .movie__info_image {
+                display: flex;
+                max-width: 333.5px;
+                border: 1px solid $color_relentlessly-red;
+                border-radius: 5%;
+                user-select: none;
+                img {
+                    border-radius: 5%;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            .movie__info_text {
+                margin-left: 15px;
+                color: $color_white-snow;
+                letter-spacing: 2px;
+                .movie__info_text_title {
+                    margin-bottom: 20px;
+                    h1,
+                    h2,
+                    h3,
+                    h4,
+                    h5,
+                    h6 {
+                        font-weight: 400;
+                        font-size: 2.5em;
+                        color: $color_relentlessly-red;
+                    }
+                }
+                .movie__info_text_item {
+                    line-height: 40px;
+                    p:first-child {
+                        font-weight: 300;
+                        margin-bottom: 25px;
+                    }
+                    p:nth-child(2),
+                    p:nth-child(3) {
+                        span:nth-child(2),
+                        span:last-child {
+                            color: $color_relentlessly-red;
+                        }
+                    }
+                    a {
+                        color: $color_white-snow;
+                        transition: all ease 0.2s;
+                        &:hover {
+                            color: $color_relentlessly-red;
+                            transition: all ease 0.2s;
+                        }
+                    }
+                }
+            }
+        }
+        .movie__player {
+            position: relative;
+            background: $color_black;
+            margin-top: 50px;
+            border-top: 1px solid $color_relentlessly-red;
+            border-bottom: 1px solid $color_relentlessly-red;
+            &:before {
+                content: "Загрузка";
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $color_relentlessly-red;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: $color_black;
+                letter-spacing: 2px;
+                z-index: 10000;
+                animation: 0.75s ease 0s infinite loading;
+            }
+            #yohoho {
+                width: auto !important;
+            }
+            iframe {
+                user-select: none !important;
+            }
+            .player__error {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                text-align: center;
+                color: $color_white-snow;
+                letter-spacing: 2px;
+            }
+            .yohoho-active {
+                user-select: none !important;
+                pointer-events: none !important;
+            }
+        }
+        .movie__player_loaded {
+            &:before,
+            &:after {
+                display: none !important;
+            }
+        }
+    }
+    .main__content_start_wrapper {
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+    .movie__error {
+        text-align: center;
+        color: $color_white-snow;
+        letter-spacing: 2px;
+    }
+    .movie__information {
+        margin-top: 50px;
+        text-align: center;
+        color: $color_white-snow;
+        letter-spacing: 2px;
+        p {
+            line-height: 40px;
+            margin-bottom: 25px;
+        }
+        p:last-child {
+            color: $color_relentlessly-red;
+            margin-bottom: 0;
+        }
+    }
+    //end section
+    .main__content_end {
+        border-top: 1px solid $color_relentlessly-red;
+        .end__content_info_link {
+            text-align: center;
+            .info__link_item {
+                text-align: center;
+                color: $color_white-snow;
+                letter-spacing: 2px;
+                transition: all ease 0.2s;
+                &:hover {
+                    color: $color_relentlessly-red;
+                    transition: all ease 0.2s;
+                }
+            }
+        }
+    }
+    .main__content_end_wrapper {
+        padding-top: 35px;
+        padding-bottom: 55px;
+    }
+}

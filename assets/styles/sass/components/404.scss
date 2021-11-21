@@ -1,0 +1,36 @@
+@import "../utils/_variables.scss";
+//404
+.error__main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $color_dark-grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto Condensed", sans-serif;
+    color: $color_relentlessly-red;
+    letter-spacing: 2px;
+    user-select: none;
+    p {
+        margin-top: 20px;
+        text-align: center;
+    }
+    p:first-child {
+        margin-top: 0;
+        font-size: 60px;
+    }
+    a {
+        margin-top: 60px;
+        text-align: center;
+        color: $color_white-snow;
+        transition: all ease 0.2s;
+        &:hover {
+            color: $color_relentlessly-red;
+            transition: all ease 0.2s;
+        }
+    }
+}

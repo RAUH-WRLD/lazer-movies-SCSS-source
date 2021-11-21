@@ -1,0 +1,22 @@
+@import "../utils/_variables.scss";
+//loader
+.loading__main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $color_dark-grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto Condensed", sans-serif;
+    color: $color_relentlessly-red;
+    letter-spacing: 2px;
+    user-select: none;
+}
+.loaded {
+    &::before {
+        display: none !important;
+    }
+}

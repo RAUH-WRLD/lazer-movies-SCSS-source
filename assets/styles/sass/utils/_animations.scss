@@ -1,0 +1,59 @@
+//home page
+//tmdb
+@keyframes loadingTMDB {
+    25% {
+        content: "Загрузка TMDB";
+    }
+    50% {
+        content: "Загрузка TMDB.";
+    }
+    75% {
+        content: "Загрузка TMDB..";
+    }
+    100% {
+        content: "Загрузка TMDB...";
+    }
+}
+//movies
+//kinopoisk
+@keyframes loadingKinopoisk {
+    25% {
+        content: "Загрузка Kinopoisk";
+    }
+    50% {
+        content: "Загрузка Kinopoisk.";
+    }
+    75% {
+        content: "Загрузка Kinopoisk..";
+    }
+    100% {
+        content: "Загрузка Kinopoisk...";
+    }
+}
+//PlayerAPIJS
+@keyframes loading {
+    25% {
+        content: "Загрузка";
+    }
+    50% {
+        content: "Загрузка.";
+    }
+    75% {
+        content: "Загрузка..";
+    }
+    100% {
+        content: "Загрузка...";
+    }
+}
+//background movies
+@keyframes backgroundMovies {
+    0% {
+        transform: translateY(-6890px);
+    }
+    50% {
+        transform: translateY(-5000px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

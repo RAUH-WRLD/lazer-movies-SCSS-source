@@ -1,0 +1,16 @@
+//base styles
+@import "./sass/utils/_variables.scss"; //for all pages
+@import "./sass/utils/_animations.scss"; //for all pages
+@import "./sass/base/_reset.scss"; //for all pages
+@import "./sass/vendors/_foundation.scss"; //for all pages
+//header & footer
+@import "./sass/layout/_header.scss"; //for all pages
+@import "./sass/layout/_footer.scss"; //for all pages
+//pages
+@import "./sass/pages/_home.scss"; //only for home page
+@import "./sass/pages/_about.scss"; //only for about page
+@import "./sass/pages/_movies.scss"; //only for movies page
+@import "./sass/pages/_search-movies.scss"; //only for results page
+@import "./sass/pages/_movie-item.scss"; //only for movie page
+//media queries
+@import "./sass/base/_media-queries.scss"; //for all pages

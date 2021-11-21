@@ -1,0 +1,42 @@
+//header active page
+.results__header,
+.results__footer {
+    .header__navigation_list {
+        li:nth-child(4) {
+            a {
+                pointer-events: none;
+                color: $color_relentlessly-red;
+                cursor: default;
+            }
+        }
+    }
+}
+//main
+.results__main {
+    @extend .movies__main;
+    .start__content_title {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            span:first-child,
+            span:last-child {
+                color: $color_relentlessly-red;
+            }
+        }
+    }
+    .end__content_info_link {
+        .info__link_item {
+            text-align: center;
+            color: $color_white-snow;
+            letter-spacing: 2px;
+            transition: all ease 0.2s;
+            &:hover {
+                color: $color_relentlessly-red;
+                transition: all ease 0.2s;
+            }
+        }
+    }
+}

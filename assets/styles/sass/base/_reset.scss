@@ -1,0 +1,103 @@
+@import "../../../../../node_modules/normalize.css/normalize";
+*::selection {
+    background-color: $color_relentlessly-red-low;
+}
+html,
+body {
+    overflow-x: hidden !important;
+}
+body {
+    overflow: hidden !important;
+}
+html {
+    scroll-behavior: smooth !important;
+    ::-webkit-scrollbar-button {
+        width: 0px;
+        height: 0px;
+    }
+    ::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 0px;
+        border-radius: 0px;
+    }
+    ::-webkit-resizer {
+        width: 0px;
+        height: 0px;
+    }
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+}
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+    padding: 0;
+}
+a {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    user-select: none;
+    pointer-events: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+s {
+    margin: 0;
+}
+input {
+    outline: none;
+}
+input[type="text"]::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+}
+input[type="text"]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background: $color_dark-grey;
+}
+section {
+    background: $color_dark-grey;
+}
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
